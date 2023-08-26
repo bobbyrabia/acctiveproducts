@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "bd0486b3-5264-4e8e-b22c-0e2ebf0d5c6b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28522220",
+		"_collection_link": "https://ic-espe-23.postman.co/workspace/Integraci%C3%B3n-Curricular~12f8bacb-4bfb-4b58-a974-75979c9594ea/collection/28522220-bd0486b3-5264-4e8e-b22c-0e2ebf0d5c6b?action=share&source=collection_link&creator=28522220"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/productsaccounts/CORR2023",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productsaccounts/CORR2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productsaccounts",
+						"CORR2023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/interestrates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\": \"PASIVA AHORRO\",\r\n    \"interestRate\": 0.05,\r\n    \"state\": \"ACT\",\r\n    \"start\": \"2023-08-25\",\r\n    \"end\": \"2023-09-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/productsaccounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"CORR2022\",\r\n    \"name\": \"Cuenta\",\r\n    \"description\": \"Una cuenta de cheques simple\",\r\n    \"minimunBalance\": 50.00,\r\n    \"payInterest\": \"N\",\r\n    \"acceptsChecks\": \"N\",\r\n    \"state\": \"ACT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/productsaccounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"productsaccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/api/v1/branches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9091/api/v1/branches",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/api/v1/branches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"123456\",\r\n    \"name\": \"Sucursal quito\",\r\n    \"description\": \"Av. Quito\",\r\n    \"minimunBalance\": 1000.00,\r\n    \"payInterest\": \"semanal\",\r\n    \"acceptsChecks\": \"Y\",\r\n    \"state\": \"ACT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9091/api/v1/branches",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/interestrates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"PASIVA CORRIENTE\",\r\n    \"interestRate\": 0.00,\r\n    \"state\": \"ACT\",\r\n    \"start\": \"2023-08-26\",\r\n    \"end\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/interestrates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"interestrates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
